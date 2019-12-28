@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Lemon|Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --c-purple-dark: rgb(48, 44, 93);
+    --c-pink-dark: rgb(106, 46, 125);
+}
+
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    /* background: rgb(48, 44, 93); */
+    background: radial-gradient(circle, rgba(106, 46, 125, 1) 0%, rgba(48, 44, 93, 1) 100%);
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lemon', cursive;
+    padding: 40px 0;
+}
+
+.tile-container {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.tile-owl,
+.tile-aliens {
+    /* background: radial-gradient(circle, rgb(239, 215, 247) 0%, rgb(92, 89, 139) 100%); */
+    width: 350px;
+    height: 400px;
+    margin: 20px;
+    border-radius: 2px;
+    background-color: rgb(207, 184, 214);
+
+
+}
+
+.tile-text-container {
+    padding: 40px 20px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    color: var(--c-purple-dark);
+}
+
+.tile-heading {
+    font-family: 'Lemon', cursive;
+    font-size: 30px;
+    margin-bottom: 40px;
+
+}
+
+.tile-info {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+
+}
+
+.btn-box {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+}
+
+.btn-link {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 15px 75px;
+    font-size: 17px;
+    background-color: white;
+    color: var(--c-purple-dark);
+    transition: 0.4s ease;
+    border-radius: 2px;
+}
+
+.btn-link:hover {
+    box-shadow: 5px 5px 20px rgb(252, 243, 255);
+    color: var(--c-pink-dark);
+}
+
+/* add icons, alien and owl */
