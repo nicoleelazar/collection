@@ -16,7 +16,7 @@
     width: 100%;
     min-height: 100vh;
     height: 100%;
-    /* background: rgb(48, 44, 93); */
+    background: rgb(48, 44, 93);
     background: radial-gradient(circle, rgba(106, 46, 125, 1) 0%, rgba(48, 44, 93, 1) 100%);
 }
 
@@ -40,14 +40,11 @@
 
 .tile-owl,
 .tile-aliens {
-    /* background: radial-gradient(circle, rgb(239, 215, 247) 0%, rgb(92, 89, 139) 100%); */
     width: 350px;
     height: 400px;
     margin: 20px;
     border-radius: 2px;
     background-color: rgb(207, 184, 214);
-
-
 }
 
 .tile-text-container {
@@ -62,13 +59,14 @@
 .tile-heading {
     font-family: 'Lemon', cursive;
     font-size: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 
 }
 
 .tile-info {
     font-family: 'Poppins', sans-serif;
     font-size: 17px;
+    margin-bottom: 20px;
 
 }
 
@@ -96,4 +94,94 @@
     color: var(--c-pink-dark);
 }
 
-/* add icons, alien and owl */
+
+
+
+/* icons movement ------------- */
+
+.picture-box-owl,
+.picture-box-alien {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto;
+    position: relative;
+    overflow: visible;
+}
+
+.picture-box-owl::after,
+.picture-box-alien::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.picture-box-owl::after {
+    background-image: url('/assets/bush.png');
+    transform: scale(1.4);
+}
+
+.picture-box-alien::after {
+    background-image: url('/assets/player.png');
+    transform: scale(1.1);
+}
+
+
+.owl-center,
+.owl-right,
+.owl-left,
+.alien-center,
+.alien-right,
+.alien-left {
+    position: absolute;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+
+.owl-center,
+.owl-right,
+.owl-left {
+    background-image: url('/assets/owl.png');
+}
+
+.alien-center,
+.alien-right,
+.alien-left {
+    background-image: url('/assets/alien.png');
+    transform: scale(0.6);
+}
+
+
+.picture-box-owl:hover>.owl-left {
+    transform: translateX(-70px);
+}
+
+.picture-box-owl:hover>.owl-right {
+    transform: translateX(70px);
+}
+
+.picture-box-owl:hover>.owl-center {
+    transform: translate(25px, -3px) rotate(30deg);
+}
+
+
+.picture-box-alien:hover>.alien-left {
+    transform: translate(-60px, -90px) scale(0.6);
+}
+
+.picture-box-alien:hover>.alien-right {
+    transform: translate(60px, -90px) scale(0.6);
+}
+
+.picture-box-alien:hover>.alien-center {
+    transform: translateY(-60px) scale(0.6);
+}
