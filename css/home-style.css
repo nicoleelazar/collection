@@ -185,3 +185,15 @@
 .picture-box-alien:hover>.alien-center {
     transform: translateY(-60px) scale(0.6);
 }
+
+
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: var(--c-purple-dark);
+    text-align: center;
+    padding-top: 15px;
+    color: rgb(138, 133, 189);
+    font-family: 'Poppins', sans-serif;
+}

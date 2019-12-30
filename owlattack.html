@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/owlattack.css">
+    <title>Owl Attack</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">
+            <span class="heading">Owl Attack Score: </span><span id="scoreboard">0</span>
+            <span class="game-message"></span>
+            <div class="clock"><span class="minutes">00</span><span>:</span><span class="seconds">00</span></div>
+
+        </div>
+        <div id="game-area"></div>
+    </div>
+
+    <div class="modal">
+        <div class="start-message-contain">
+            <div class="start-game">
+                <h1 class="modal-title">Welcome to Owl Attack</h1>
+                <div class="modal-text">Work your way through four levels by scoring a point for each owl you click.
+                    Good luck !</div>
+                <button class="button">Start Game</button>
+            </div>
+            <div class="win-game">
+                <h1 class="modal-title">You, are the Champion!! My friend.</h1>
+                <div class="modal-text">You have triumphed over the Owls with the time of </div>
+                <div class="modal-time">
+                    <span class="minutes">00</span><span>:</span><span class="seconds">00</span><span> secs.</span>
+                </div>
+                <button class="button">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <audio id="audio-duck" preload="auto">
+        <source src="/assets/duck_quack.wav" type="audio/wav">
+    </audio>
+
+    <audio id="audio-ping" preload="auto">
+        <source src="/assets/ping.wav" type="audio/wav">
+    </audio>
+
+    <audio id="audio-tada" preload="auto">
+        <source src="/assets/tada.wav" type="audio/wav">
+    </audio>
+
+</body>
+
+<script src="/js/owlattack.js"></script>
+
+</html>
